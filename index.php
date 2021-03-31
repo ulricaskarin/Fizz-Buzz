@@ -1,6 +1,7 @@
 <?php
 /**
- * Mission:
+ * Mission: FizzBuzz Game!
+ *
  * Write a program that prints the integers from 1 to 100.
  * For multiples of three - print "Fizz" instead of the number.
  * For the multiples of five - print "Buzz" instead of the number.
@@ -12,13 +13,20 @@ require_once(ROOT_PATH .'/app/_config/_autoload.php');
 /**
  * The OOP Implementation
  * Creates new FizzBuzzGame
- * Calls on the method Calculate with a number as argument.
+ * Calls on one of the two methods Calculate Number or Calculate Range.
  * Result is echoed out.
  * @var model
  */
+
+// Method number one - Calculate one Number:
 $fizzBuzzGame = new model\FizzBuzz(15);
-$result = $fizzBuzzGame->calculate();
-echo $result; // Result = FizzBuzz!
+$result = $fizzBuzzGame->calculateNumber();
+echo 'Result of Calculate Number: ' . $result . '!</br>'; // Result = FizzBuzz!
+
+// Method number two Calculate Range 1-100:
+$fizzBuzzGame2 = new model\FizzBuzz();
+$result2 = $fizzBuzzGame2->calculateRange();
+echo 'Result of Calculate Range: </br>' . $result2; // Result = 1, 2, Fizz, 4, Buzz ...
 
 /**
  * The Procedural Implementation
