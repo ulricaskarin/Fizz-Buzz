@@ -1,7 +1,6 @@
-# FizzBuzz!
+# It's FizzBuzz Time!
 
-![](fizz_h.gif)
+![](fizz_h.jpg)
 ---
-## Example of a few different implementations.
-
+## Example of a few different implementations
 Procedural and Object Oriented.
